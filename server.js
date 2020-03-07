@@ -11,7 +11,6 @@ const dbUser = process.env.DB_USER;
 const dbPass = process.env.DB_PASS;
 const dbHost = process.env.DB_HOST;
 const dbCollection = process.env.DB_COLLECTION;
-const stringConnection = `mongodb+srv://${dbUser}:${dbPass}@${dbHost}/${dbCollection}`;
 
 const app = express();
 
@@ -19,7 +18,7 @@ app.use(helmet());
 app.use(express.urlencoded({ extended: false }));
 app.set('view engine', 'ejs');
 
-mongoose.connect(stringConnection, {
+mongoose.connect(`mongodb+srv://${dbUser}:${dbPass}@${dbHost}/${dbCollection}?retryWrites=true&w=majority`, {
   useNewUrlParser: true, 
   useUnifiedTopology: true,
   useCreateIndex: true,
