@@ -2,10 +2,10 @@
 
 ### url-shortener
 
-Encurtador de URL com contagem de acessos ao link curto. API em NodeJS com Express, template em EJS e  banco de dados em MongoDB.
+Encurtador de URL com contagem de acessos ao link curto. Desenvolvido em NodeJS com Express, template em EJS e banco de dados em MongoDB.
 
 ### Demo
-[https://titenq.github.io/url-shortener/](https://titenq.github.io/url-shortener/ "https://titenq.github.io/url-shortener/")
+[https://urlcurta.herokuapp.com/](https://urlcurta.herokuapp.com/ "https://urlcurta.herokuapp.com/")
 
 ### Tecnologias
 - NodeJS
